@@ -7,9 +7,10 @@ namespace assignment {
 
   int64_t fib_binet(int n) {
 
-    if (n <= 1) {
+    if (n <= 1){
       return n;
     }
+
     double result = pow(1 + sqrt(5), n) - pow(1 - sqrt(5), n);
     result = result / (pow(2, n) * sqrt(5));
 
@@ -48,7 +49,7 @@ namespace assignment {
       return cache[n];
     }
 
-    if (cache[n] != -1) {
+    if (cache[n] != -1){
       return cache[n];
     }
 
